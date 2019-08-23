@@ -219,6 +219,9 @@ class Jetpack_Memberships {
 		if ( isset( $attrs['className'] ) ) {
 			array_push( $classes, $attrs['className'] );
 		}
+		if ( isset( $attrs['align'] ) ) {
+			array_push( $classes, 'align' . $attrs['align'] );
+		}
 		if ( isset( $attrs['submitButtonText'] ) ) {
 			$data['button_label'] = $attrs['submitButtonText'];
 		}
